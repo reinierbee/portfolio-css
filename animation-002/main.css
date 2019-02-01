@@ -1,0 +1,92 @@
+body{
+  font-family: Poppins;
+  background-color: #fcd04b;
+}
+
+h1, p {
+  text-align: center;
+}
+
+.btn1{
+  outline: none;
+  border: none;
+  cursor: pointer;
+  display: block;
+  position: relative;
+  background-color: #fcad26;
+  font-size: 16px;
+  font-weight: 300px;
+  font-family: Poppins;
+  font-color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 20px 80px;
+  margin: 0 auto;
+  border-radius: 10px;
+  transition: transform 0.5s;
+}
+
+.btn1:hover {
+  transform: scale(1.2);
+  transition: transform 0.5s;
+}
+
+.btn1:active {
+  transform: scale(1.1);
+  background-color: #efa424;
+  transition: transform 0.3s;
+}
+
+.rb1{
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  width: 250px;
+  transform: rotate(90deg);
+  list-style: none;
+  text-align: center;
+}
+.rb1 li{
+  width: 70px;
+  padding:20px 0;
+  color: white;
+  background-color: black;
+  transition: width 1s ease-out,
+  background-color 0.2s ease-out,
+  border-top-right-radius 0.2s linear 0.8s,
+  border-bottom-right-radius 0.4s linear 0.6s;
+}
+
+.rb1 li:hover {
+  width: 200px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.violet:hover {
+  background-color: violet;
+}
+
+.indigo:hover {
+  background-color: indigo;
+}
+
+.blue:hover {
+  background-color: blue;
+}
+
+.green:hover {
+  background-color: green;
+}
+
+.yellow:hover {
+  background-color: yellow;
+}
+
+.orange:hover {
+  background-color: orange;
+}
+
+.red:hover {
+  background-color: red;
+}
