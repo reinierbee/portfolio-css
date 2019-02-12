@@ -7,6 +7,8 @@ h1, p {
   text-align: center;
 }
 
+/* animations 1 */
+
 @keyframes rolling {
   0%{
     background-color: red;
@@ -40,4 +42,82 @@ h1, p {
   height: 20px;
   border-radius: 10px;
   background-color: red;
+}
+
+/* animations 2  */
+
+@keyframes scroll {
+    0%{
+      transform: translateX(-82px);
+    }
+    100%{
+      transform: translateX(1000px);
+    }
+}
+
+@keyframes sunmotion{
+    0%{
+      transform: translate(0px,0px);
+    }
+    25% {
+      transform: translate(100px,-200px);
+    }
+    50% {
+      transform: translate(500px,-300px);
+    }
+    75% {
+      transform: translate(800px,-200px);
+    }
+    100%{
+      transform: translate(900px,0px);
+    }
+}
+
+.world {
+  width: 1000px;
+  height: 400px;
+  margin: 0 auto;
+  background-color: purple;
+}
+
+.sun{
+  width: 50px;
+  height: 50px;
+  margin-top: 400px;
+  border-radius:25px;
+  position: absolute;
+  background-color: yellow;
+  animation: sunmotion 3s linear 0s infinite;
+}
+
+.moon{
+  width: 50px;
+  height: 50px;
+  border-radius:25px;
+  position: absolute;
+  background-color: white;
+}
+
+.sky{
+  width: 1000px;
+  height: 500px;
+  position: absolute;
+  background-color: #5b5bff;
+}
+
+.ground{
+  width: 1000px;
+  height: 100px;
+  margin-top: 400px;
+  position: absolute;
+  background-color: #39e439;
+}
+
+.house {
+  background-image: url("../assets/img/house-small.png");
+  animation: scroll 5s linear 0s infinite reverse;
+  margin-top: 322px;
+  width: 82px;
+  height: 82px;
+  position: absolute;
 }
