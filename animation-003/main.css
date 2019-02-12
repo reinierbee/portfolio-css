@@ -45,6 +45,36 @@ h1, p {
 }
 
 /* animations 2  */
+.spinner {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  border: 10px solid #fcd04b;
+  border-top-color: teal;
+  border-bottom-color: navy;
+  border-radius: 50%;
+  animation: rotate 1s linear infinite;
+}
+
+.spinner p {
+  animation: rotate 1s linear infinite reverse;
+  margin: 0 auto;
+  text-align: center;
+  width: 100px;
+  height: 100px;
+}
+
+@keyframes rotate{
+  0% {
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+
+/* animations 3  */
 
 @keyframes scroll {
     0%{
@@ -78,7 +108,7 @@ h1, p {
       transform: translate(0px,0px);
     }
     7% {
-      transform: translate(100px,-200px);
+      transform: translate(150px,-200px);
     }
     35% {
       transform: translate(500px,-300px);
@@ -134,7 +164,7 @@ h1, p {
   border-radius:25px;
   position: absolute;
   background-color: yellow;
-  animation: sunmotion 13s ease-in-out 0s infinite,
+  animation: sunmotion 13s linear 0s infinite,
              suncolor 13s linear 0s infinite;
 }
 
