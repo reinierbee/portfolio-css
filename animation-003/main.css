@@ -1,0 +1,43 @@
+body{
+  font-family: Poppins;
+  background-color: #fcd04b;
+}
+
+h1, p {
+  text-align: center;
+}
+
+@keyframes rolling {
+  0%{
+    background-color: red;
+    transform: scale(1);
+  }
+  25%{
+    background-color: orange;
+  }
+  50%{
+    background-color: yellow;
+    transform: scale(3);
+    margin-left: 50%;
+  }
+  75%{
+    background-color: green;
+  }
+  100%{
+    background-color: blue;
+    margin-left: 100%;
+    transform: scale(1);
+  }
+}
+
+.ball{
+  animation-name: rolling;
+  animation-duration: 5s;
+  animation-timing-function: cubic-bezier(.58,.07,.67,.96);
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  background-color: red;
+}
