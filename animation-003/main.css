@@ -55,21 +55,68 @@ h1, p {
     }
 }
 
+@keyframes daynightcycle {
+    0%{
+       filter: grayscale(100%) invert(100%) brightness(0.2);
+    }
+    5% {
+       filter: grayscale(0) invert(0) brightness(1);
+    }
+    65% {
+       filter: grayscale(0) invert(0) brightness(1);
+    }
+    70%{
+       filter: grayscale(100%) invert(100%) brightness(0.2);
+    }
+    100%{
+       filter: grayscale(100%) invert(100%) brightness(0.2);
+    }
+}
+
 @keyframes sunmotion{
     0%{
       transform: translate(0px,0px);
     }
-    25% {
+    7% {
       transform: translate(100px,-200px);
     }
-    50% {
+    35% {
       transform: translate(500px,-300px);
     }
-    75% {
+    62% {
       transform: translate(800px,-200px);
     }
-    100%{
+    70%{
       transform: translate(900px,0px);
+    }
+}
+
+
+
+@keyframes suncolor{
+    0%{
+      background-color: white;
+    }
+    7% {
+      background-color: yellow;
+    }
+    62% {
+      background-color: yellow;
+    }
+    70%{
+      background-color: orange;
+    }
+}
+
+@keyframes moonmotion{
+    67%{
+      transform: translate(0px,0px);
+    }
+    85% {
+      transform: translate(0px,-300px);
+    }
+    100%{
+      transform: translate(0px,0px);
     }
 }
 
@@ -87,15 +134,18 @@ h1, p {
   border-radius:25px;
   position: absolute;
   background-color: yellow;
-  animation: sunmotion 3s linear 0s infinite;
+  animation: sunmotion 13s ease-in-out 0s infinite,
+             suncolor 13s linear 0s infinite;
 }
 
 .moon{
+  margin-top: 400px;
   width: 50px;
   height: 50px;
   border-radius:25px;
   position: absolute;
   background-color: white;
+  animation: moonmotion 13s ease-in-out 0s infinite normal backwards;
 }
 
 .sky{
@@ -103,6 +153,7 @@ h1, p {
   height: 500px;
   position: absolute;
   background-color: #5b5bff;
+  animation: daynightcycle 13s linear 0s infinite;
 }
 
 .ground{
@@ -111,11 +162,13 @@ h1, p {
   margin-top: 400px;
   position: absolute;
   background-color: #39e439;
+  animation: daynightcycle 13s linear 0s infinite;
 }
 
 .house {
   background-image: url("../assets/img/house-small.png");
-  animation: scroll 5s linear 0s infinite reverse;
+  animation: scroll 5s linear 0s infinite reverse,
+             daynightcycle 13s linear 0s infinite normal;
   margin-top: 322px;
   width: 82px;
   height: 82px;
