@@ -78,7 +78,7 @@ h1, p {
 
 @keyframes scroll {
     0%{
-      transform: translateX(-82px);
+      transform: translateX(-182px);
     }
     100%{
       transform: translateX(1000px);
@@ -170,6 +170,7 @@ h1, p {
 
 .moon{
   margin-top: 400px;
+  margin-left: 800px;
   width: 50px;
   height: 50px;
   border-radius:25px;
@@ -197,9 +198,20 @@ h1, p {
 
 .house {
   background-image: url("../assets/img/house-small.png");
-  animation: scroll 5s linear 0s infinite reverse,
+  animation: scroll 10s linear 0s infinite reverse,
              daynightcycle 13s linear 0s infinite normal;
   margin-top: 322px;
+  width: 82px;
+  height: 82px;
+  position: absolute;
+}
+
+.tree {
+  background-image: url("../assets/img/tree-small.png");
+  animation: scroll 10s linear 0s infinite reverse,
+             daynightcycle 13s linear 0s infinite normal;
+  margin-top: 320px;
+  margin-left: 100px;
   width: 82px;
   height: 82px;
   position: absolute;
