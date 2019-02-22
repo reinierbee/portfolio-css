@@ -1,0 +1,132 @@
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+
+body{
+  font-family: Poppins;
+  background-color: #025f84;
+  color: white;
+}
+
+h1, p {
+  text-align: center;
+}
+
+h1 {
+  width: 100%;
+}
+
+.maincointainer {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.icons {
+  display: flex;
+  position: absolute;
+  align-self: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.icons div {
+  width: 24px;
+  height: 24px;
+}
+
+#mob{
+  background-image: url("../assets/icon/baseline-phone_android-24px.svg");
+}
+
+#tab{
+  background-image: url("../assets/icon/baseline-tablet_mac-24px.svg");
+}
+
+#pc{
+  background-image: url("../assets/icon/baseline-computer-24px.svg");
+}
+
+.container {
+  background-color: #0580b1;
+  margin: 0 auto;
+}
+
+.container1 {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: stretch;
+}
+
+.container1 div {
+  text-align: center;
+  width: 200px;
+}
+
+.violet:hover {
+  background-color: violet;
+}
+
+.indigo:hover {
+  background-color: indigo;
+}
+
+.blue:hover {
+  background-color: blue;
+}
+
+.green:hover {
+  background-color: green;
+}
+
+.yellow:hover {
+  background-color: yellow;
+}
+
+.orange:hover {
+  background-color: orange;
+}
+
+.red:hover {
+  background-color: red;
+}
+
+/*  example 2 */
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+nav a {
+  font-size: 40px;
+  text-decoration: none;
+  color: #ffbe26;
+  margin: 10px;
+  transition: color 0.5s ease-out;
+}
+
+nav a:hover{
+  color: #ff7c2d;
+}
+
+i {
+  margin-right: 10px
+}
+
+@media screen and (max-width: 900px) {
+  nav {
+    justify-content: space-around;
+  }
+  nav a {
+      font-size: 20px;
+      margin: 5px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+}
