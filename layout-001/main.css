@@ -130,3 +130,25 @@ i {
     align-items: center;
   }
 }
+
+
+/*  example 3 */
+.container3 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box {
+  background: #cc0042;
+  flex: 1 1 300px;
+  padding: 20px;
+  transition: background 0.5s ease-out;
+}
+
+.box:hover {
+  background: #ff0052;
+}
+
+.middle {
+  background: #b20039;
+}

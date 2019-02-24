@@ -6,7 +6,7 @@ window.onload=function(){
 
 
 function changeSize(px) {
-  elements = document.getElementsByClassName('container1');
+  elements = document.getElementsByClassName('container-screen');
   for (var i = 0; i < elements.length; ++i) {
     elements[i].style.width=px;
   }
