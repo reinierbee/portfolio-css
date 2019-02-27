@@ -75,6 +75,13 @@ section p {
   text-align: center;
 }
 
+
+@media (max-width: 800px) {
+  section {
+    padding: 50px 20px;
+  }
+}
+
 /* header */
 
 header{
@@ -105,6 +112,16 @@ header nav {
 }
 header nav li {
   margin: 0 15px;
+}
+
+@media (max-width: 800px) {
+  header {
+    padding: 20px 50px;
+    flex-direction: column;
+  }
+  header h2 {
+    margin-bottom: 15px;
+  }
 }
 
 /* hero stuff */
@@ -156,6 +173,22 @@ header nav li {
 
 }
 
+
+@media (max-width: 800px) {
+  .hero {
+    min-height: 600px;
+  }
+  .hero h1 {
+    font-size: 48px;
+  }
+  .hero h3 {
+    font-size: 24px;
+  }
+  .hero a.btn {
+    padding: 15px 40px;
+  }
+}
+
 /* destinations */
 
 .destinations .grid li {
@@ -172,6 +205,21 @@ header nav li {
 
 .destinations .grid li.large {
   flex-basis: 70%;
+}
+
+@media (max-width: 1100px) {
+  .destinations .grid li.small,
+  .destinations .grid li.large {
+    flex-basis: 50%;
+  }
+}
+
+
+@media (max-width: 800px) {
+  .destinations .grid li.small,
+  .destinations .grid li.large {
+    flex-basis: 100%;
+  }
 }
 
 /* articles  */
@@ -191,6 +239,13 @@ header nav li {
   margin: 25px 0;
 }
 
+@media (max-width: 800px) {
+  .articles .grid li {
+    flex-basis: 100%;
+    padding: 20px;
+  }
+}
+
 /* authors */
 
 .authors .quote {
@@ -198,6 +253,16 @@ header nav li {
   font-weight: 300;
   line-height: 1.5;
   margin: 40px 0 25px;
+}
+
+@media (max-width: 800px) {
+  .authors .qoute {
+    font-size: 18px;
+    margin: 15px 0;
+  }
+  .authors .author {
+    font-size: 14px;
+  }
 }
 
 /* contact */
@@ -218,6 +283,14 @@ header nav li {
   font-size: 18px;
   color: #555;
   flex: 1;
+}
+
+
+@media (max-width: 1000px) {
+  .contact form input {
+    flex-basis: 100%;
+    margin: 0 0 20px 0;
+  }
 }
 
 /* Footer */
@@ -243,4 +316,17 @@ footer p {
   font-size: 14px;
   opacity: 0.6;
   align-self: center;
+}
+
+@media (max-width: 1100px) {
+  footer {
+    flex-direction: column;
+  }
+  footer p {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  footer ul li {
+    margin: 0 8px;
+  }
 }
